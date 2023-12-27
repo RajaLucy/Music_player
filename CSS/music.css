@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    
+}
+
+
+.container{
+
+    background-color:whitesmoke;
+    margin: 50px 100px;
+    padding: 10px;
+    color: white;
+    backdrop-filter: blur(5px);
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 500px;
+    background-image: url("../sources/cont.jpg");
+    background-position: center;
+    object-fit: cover;
+}
+.container h2{
+    text-shadow: 2px 2px 5px rebeccapurple;
+    font-size: 35px;
+    color: black;
+}
+.details{
+   display: flex;
+   justify-content: space-around;
+}
+
+.box{
+    width: 220px;
+    height: 200px;
+    margin-bottom:20px ;
+    color: black;
+   
+   
+}
+.box h2{
+     font-size: 20px;
+}
+.box img{
+    width: 100%;
+    height: 90%;
+    object-fit:cover;
+    object-position: 15% 100%;
+    transition: transform 0.5s ease;
+
+}
+
+.control{
+   cursor: pointer;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    margin: 0px;
+    border: 2px solid red;
+   
+}
+
+.audio{
+    width: 300px;
+    height: auto;
+   
+   display: block;
+   color: black;
+   
+}
+.audio img{
+    width: 30px;
+   
+}
+.audio h1{
+   width:auto;
+   height: 50px;
+    
+}
+
+
+.audio button{
+    border: none;
+    background-color: transparent;
+}
+
+@media (max-width: 600px) {
+   .details{
+    display: block;
+   }
+   .container{
+  
+    margin: 0px;
+    width: 500px;
+    height: auto;
+
+   }
+   .box h6{
+    display: none;
+   }
+   
+
+}
